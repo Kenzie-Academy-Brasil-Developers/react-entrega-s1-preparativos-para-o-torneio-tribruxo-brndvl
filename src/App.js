@@ -8,8 +8,6 @@ function App() {
 
   const [choiceStudents, setChoiceStudents] = useState([])
 
-  const randonFunc = () => {}
-
   const randomChoice = () => {
 
     const randomWitch1 = studentsList[Math.floor((Math.random() * studentsList.length))]
@@ -24,7 +22,7 @@ function App() {
   }
 
   useEffect(() => {
-    fetch("http://hp-api.herokuapp.com/api/characters/students")
+    fetch("https://hp-api.herokuapp.com/api/characters/students")
     .then((response) => response.json())
     .then((response) => setStudentsList(response))
     .catch((err) => console.log(err))
