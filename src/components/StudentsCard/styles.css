@@ -1,8 +1,10 @@
 .students-card{
-    height: 270px;
-    max-width: 210px;
+    height: 310px;
+    max-width: 250px;
     padding: 10px;
-    border: 1px solid #ddd;
+    border: 3px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 5px 5px #888888;
     margin: 10px;
     background-color: aliceblue;
     color: cadetblue;
@@ -10,7 +12,7 @@
 }
 
 .picture{
-    height: 130px;
+    height: 150px;
     width: 130px;
     object-fit: cover;
 }
